@@ -1,0 +1,8 @@
+1. Drag and drop the Ice Skating Udon prefab into your scene
+
+2. Add an ice surface that meets the requirements below
+
+Ice surface requirements:
+- gameobject name must match "ice"
+- collider must be flat and horizontal (recommend a box collider)
+- gameobject must be on Default or Environment layer
