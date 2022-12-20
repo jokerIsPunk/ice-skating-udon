@@ -16,5 +16,10 @@ EXTENDABILITY:
 	jokerispunk.IceSkatingUdon.Interface._GetSpeed()
 	jokerispunk.IceSkatingUdon.Interface._GetDirection() on the Interface script on the parent object
 
+KNOWN ISSUES:
+- if the player loads into world on the ice, they can't walk or jump after leaving the ice
+- jumping on ice is inconsistent
+- player sometimes gets thrown backwards when exiting ice
+
 
 This prefab is managed on github (github.com/jokerispunk) and I accept pull requests (you are encouraged to comment or talk to me first).
