@@ -11,9 +11,9 @@ namespace jokerispunk.IceSkatingUdon
     [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class BackgroundLoop : BaseIceSkatingUdon
     {
-        [SerializeField] EditorInterface iface;
+        [SerializeField] Interface iface;
         private LayerMask rayMask = 2049;
-        [SerializeField] Skating skateLoop;
+        public Skating skateLoop;
         private string surfaceName = "ice";
         private bool onSurfaceLast = false;
         private float rayOriginOffset = 0.2f;

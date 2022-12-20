@@ -1534,7 +1534,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f31b5c4b9830df4459a0df49ed3a4c07, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2644,7 +2644,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 731e556505a804145a3c983dd9d8afda, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3091,7 +3091,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d01508277b0269b4e80e9f9002b62ced, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10218,37 +10218,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Ice Hardness
---- !u!1 &3914740037646265927
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5285566545173450299}
-  m_Layer: 0
-  m_Name: player extension
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5285566545173450299
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3914740037646265927}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2030292276222782062}
-  m_Father: {fileID: 4729901616489422674}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3967371337939257818
 GameObject:
   m_ObjectHideFlags: 0
@@ -11201,6 +11170,7 @@ MonoBehaviour:
   surfaceHardness: 0.1
   inputReversePortion: 0.3
   vr: 0
+  moveState: 0
   hips: 1
   momentum: 0
   direction: {x: 0, y: 0, z: 0}
@@ -11269,7 +11239,7 @@ Transform:
   - {fileID: 8231715660592565060}
   - {fileID: 4729901616712144609}
   - {fileID: 4729901615771751029}
-  - {fileID: 5285566545173450299}
+  - {fileID: 2030292276222782062}
   - {fileID: 1002146252644095710}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -11300,6 +11270,7 @@ MonoBehaviour:
   rayMask:
     serializedVersion: 2
     m_Bits: 2049
+  bg: {fileID: 4729901616712144611}
 --- !u!114 &4729901616489422672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13746,8 +13717,8 @@ Transform:
   - {fileID: 5228762502919162473}
   - {fileID: 2566433758001320183}
   - {fileID: 5181783735469953533}
-  m_Father: {fileID: 5285566545173450299}
-  m_RootOrder: 0
+  m_Father: {fileID: 4729901616489422674}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6813770313921295113
 MonoBehaviour:

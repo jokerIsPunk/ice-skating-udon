@@ -14,8 +14,8 @@ namespace jokerispunk.IceSkatingUdon
     public class Skating : BaseIceSkatingUdon
     {
         // external references
-        [SerializeField] InputValues input;
-        [SerializeField] Effects fx;
+        public InputValues input;
+        public Effects fx;
 
         // internal state
         private bool initialized = false;
@@ -42,7 +42,7 @@ namespace jokerispunk.IceSkatingUdon
         [HideInInspector] public bool vr;
         private float inflectionEndTime = 0f;
         private bool inflectingLast = false;
-        private MoveState moveState = MoveState.forward;
+        [HideInInspector] public MoveState moveState = MoveState.forward;
 #if UNITY_ANDROID
         [HideInInspector] public bool hips = false;
 #else
@@ -65,8 +65,7 @@ namespace jokerispunk.IceSkatingUdon
         private VRCPlayerApi.TrackingData head;
 
         // vrc player data cache
-        [HideInInspector]
-        public float walkCache, strafeCache, runCache, jumpCache;
+        [HideInInspector] public float walkCache, strafeCache, runCache, jumpCache;
         private VRCPlayerApi lp;
 
         // refs and data for IK workaround
