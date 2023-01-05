@@ -1,5 +1,7 @@
 This prefab lets players simulate ice skating by modeling momentum and the directional control of ice skates. Movement by leg trackers is included.
 
+Bug reports and feedback: discord.gg/EyNgGSMbps
+
 SPECIFICATIONS:
 - See the GETTING STARTED doc for basic instructions
 - The surface name defaults to require matching the string "ice" but this can be redefined on the script on the parent object of the prefab
